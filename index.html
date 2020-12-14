@@ -1,23 +1,78 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet"> 
+        <meta
+      name="viewport"
+      content="minimum-scale=1, initial-scale=1, width=device-width"
+    />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="Tommy Zarick"
+      content="Interested in building cool & interesting things"
+    />
+    <title>Tommy Zarick</title>
+  </head>
+  <body style="background-color:#000000; color: #FFFFFF; font-family: 'Source Code Pro', monospace;">
+    <div id="root">
+      <h2>Hi There! I'm Tommy.</h2>
+      <div id="intro">
+        <p>
+          I'm a software engineer interested in building things from the ground up.
+          Specifically, I have an interest for clean, maintainable software projects that encourage knowledge sharing, ioT, full stack development, embedded systems, audio technology, and really any compelling technology or idea (I'm easily compelled). 
+        </p>  
+        <br />
 
-<div class="home">
+      </div>
+      <div id="projects">
 
-  <h1 class="page-heading">Posts</h1>
+        <pre>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+██████╗ ██████╗  ██████╗      ██╗███████╗ ██████╗████████╗███████╗
+██╔══██╗██╔══██╗██╔═══██╗     ██║██╔════╝██╔════╝╚══██╔══╝██╔════╝
+██████╔╝██████╔╝██║   ██║     ██║█████╗  ██║        ██║   ███████╗
+██╔═══╝ ██╔══██╗██║   ██║██   ██║██╔══╝  ██║        ██║   ╚════██║
+██║     ██║  ██║╚██████╔╝╚█████╔╝███████╗╚██████╗   ██║   ███████║
+╚═╝     ╚═╝  ╚═╝ ╚═════╝  ╚════╝ ╚══════╝ ╚═════╝   ╚═╝   ╚══════╝
+__________________________________________________________________
+        </pre>
+        <ul>
+          <li><h3>ConcertBug</h3></li>
+          <div class="projDescription" id="concertbug">
+            <p>
+              ConcertBug is a live music search assistant... 
+          </p>
+        </div>
+        <li><h3>Columbus Zoo Giraffe Enrichment Project</h3></li>
+            <div class="projDescription" id="cbusZoo">
+              <p>
+                This was a multi-disciplinary project... 
+            </p>
+          </div>
+          <li><h3>Adventure Box</h3></li>
+            <div class="projDescription" id="adventureBox">
+              <p>
+                This started as a gift idea for members of my family...
+            </p>
+          </div>
+          <li><h3>Delay/Feedback Pedal</h3></li>
+            <div class="projDescription" id="delayPedal">
+                <p>
+                  This was based on an open source schematic from...
+              </p>
+            </div>
+            <li><h3>Squid</h3></li>
+              <div class="projDescription" id="squid">
+                  <p>
+                    This was from DIYClone... 
+                </p>
+              </div>
+        </ul>
+        
+      </div>
+    </div>
+  </body>
+</html>
